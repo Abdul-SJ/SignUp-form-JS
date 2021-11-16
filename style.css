@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 8rem
+}
+.learn-container{
+    color: #fff;
+    padding: 0 3rem;
+}
+.learn-container h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+.learn-container p{
+    max-width: 34rem;
+}
+
+
+.form-container{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.trial-banner{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.6rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 9px 1px rgba(0, 0, 0, 0.2);
+}
+.trial-banner h3{
+    font-weight: 400;
+    color: #fff;
+}
+.trial-banner h3 span{
+    font-weight: 700;
+}
+
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 0.6rem;
+    max-width: 40rem;
+    box-shadow: 0px 9px 1px rgba(0, 0, 0, 0.2);
+}
+form input{
+    padding: 1rem;
+    border: 2px solid hsl(0, 0%, 65%);
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    color: hsl(248, 32%, 49%);
+}
+form button{
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+form p{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.8rem;
+    padding: 0rem 2rem 0.8rem;
+}
+form p span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+/*JS classes*/
+.error{
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+small{
+    font-size: 12px;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    margin-left: auto;
+    /* margin-top: -15px; */
+}
+.success{
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.form-control input{
+    width: 100%;
+}
+/* trying to change placeholder color of error on click  */
+/* .form-control input[name="email"]{
+ color: hsl(0, 100%, 74%); 
+   
+} */
+
+
+/* @media only screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+} */
+@media only screen and (max-width:768px) {
+    body{
+        background-image: url(bg-intro-mobile.png);
+    }
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .learn-container{
+        padding: 12rem 3rem 4rem;
+        text-align: center;
+    }
+    .learn-container h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .trial-banner{
+        padding: 1.2rem 3rem;
+    }
+    form button{
+        font-weight: 500;
+        padding: 1rem 1.5rem;
+        font-size: 0.8rem;
+    }
+    form p{
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0rem 1rem;
+    }
+    .form-container{
+        padding-bottom: 5rem;
+    }
+}

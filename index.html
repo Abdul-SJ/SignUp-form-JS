@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="learn-container">
+      <h1>Learn to Code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching tutorials is great, but understanding
+        how developers think is invaluable.
+      </p>
+    </div>
+
+    <div class="form-container">
+      <div class="trial-banner">
+        <h3><span>Try it Free 7 days</span> then $20/mo. thereafter.</h3>
+      </div>
+
+      <form id="form" action="#">
+        <div class="form-control">
+          <input type="text" placeholder="First Name" id="fname">
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="text" placeholder="Last Name" id="lname">
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="email" placeholder="Email Address" name="email" id="email"> <!--adding name tag here to call it in JS to show error email-->
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="password" placeholder="Password" id="password">
+          <small></small>
+        </div>
+        <button>Claim your Free Trial</button>
+        <p>By clicking the button you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
